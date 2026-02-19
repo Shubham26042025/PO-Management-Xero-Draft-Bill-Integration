@@ -1,0 +1,58 @@
+---
+description: BA BRD Creation Standard (Transcript-First + Satva Template)
+alwaysApply: true
+---
+
+# BA BRD Creation Standard
+
+This rule governs how Business Requirements Documents (BRDs) are created for this project. Follow the Satva template structure and transcript-first approach.
+
+## Source of Truth (Mandatory)
+
+- Assume a meeting recording transcript exists in the "Meeting Recording" folder.
+- The transcript is the primary source of truth for requirements, confirmations, scope, and decisions.
+- If transcript and other notes conflict, transcript wins. Flag conflicts under Open Questions/Risks.
+
+## Transcript Extraction Checklist
+
+Before writing a BRD, scan the transcript and extract:
+
+1. Confirmed Requirements (client-approved statements)
+2. In Scope vs Out of Scope confirmations
+3. Business rules & validations (limits, constraints, approvals, roles)
+4. Integrations + data sync expectations (what, when, direction)
+5. Reporting needs (what reports, frequency, audiences)
+6. Non-functional expectations (audit logs, security, performance, error visibility)
+7. Dependencies (client inputs, third parties, API access)
+8. Timelines/Phasing (sprints, milestones)
+9. Open Questions / Unclear items
+
+## Discovery Questions Rule
+
+- Ask discovery questions ONLY for gaps after transcript extraction.
+- Do not assume missing requirements. If unclear, list as Open Question or Assumption (needs confirmation).
+
+## BRD Structure (Satva Template)
+
+BRD must follow this structure exactly:
+
+1. Acknowledgment
+2. Requirement Discussed
+3. Solution Suggested
+4. Development Flow
+5. Assumptions/Constraints
+6. Next Steps
+
+## Writing & Formatting Rules
+
+- Every section must start with a short paragraph (2–4 sentences). No bullet-only sections.
+- Use professional, client-facing language.
+- Keep statements testable and specific (avoid "should", "etc.", "as needed").
+- Clearly separate "Client Confirmed" vs "Assumed/To Confirm".
+- End BRD with a clean list of Open Questions (if any) and explicit Next Steps.
+
+## Quality Gate
+
+BRD must include: scope boundaries, key workflows, integrations, assumptions/constraints, and next actions.
+
+**If transcript is missing/not provided, do not proceed.** Request transcript or key decisions.

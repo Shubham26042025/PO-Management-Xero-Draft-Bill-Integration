@@ -1,0 +1,21 @@
+---
+description: PO Management and Xero Draft Bill integration conventions
+globs: **/*.{ts,tsx,js,jsx,py}
+alwaysApply: false
+---
+
+# PO Management & Xero Draft Bill Integration
+
+Guidelines for this project's Purchase Order management and Xero draft bill sync.
+
+## General Conventions
+
+- Use clear, consistent naming for PO and Bill entities (e.g., `purchaseOrder`, `draftBill`).
+- Document all Xero API interactions and error handling.
+- Maintain audit logs for PO-to-Bill mapping and sync status.
+
+## Integration Patterns
+
+- Handle Xero API rate limits and retries gracefully.
+- Store sync state (synced, pending, failed) with timestamps.
+- Surface sync failures clearly for user visibility.

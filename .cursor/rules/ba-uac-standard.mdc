@@ -1,0 +1,48 @@
+---
+description: BA UAC Standard (CSV + Strict Format)
+alwaysApply: true
+---
+
+# BA UAC Standard
+
+This rule governs how User Acceptance Criteria (UAC) are written for this project. Follow the strict CSV format and coverage rules.
+
+## Mandatory Input Validation
+
+Before writing UAC, confirm:
+
+- Module name
+- BRD approval
+- FRD approval
+- Mockups/UI references
+- Sprint/release
+- Exclusions/deferred scenarios
+
+Do not generate UAC until module and requirements are clear.
+
+## Coverage Rules
+
+- For each module: produce more than 15 UAC rows.
+- Cover: positive, negative, edge/boundary, role-based behavior, validations, permissions, dependency/integration failures.
+
+## Output Format (Strict)
+
+- Output MUST be CSV format.
+- Use EXACT column headers:
+
+```
+No | Module | AS A/AN | I want to | So That | # | Questions | Acceptance Criteria
+```
+
+- Insert ONE blank row after finishing each module (empty CSV line).
+- One intent (AS A/AN + I want to + So That) followed by multiple Questions and Acceptance Criteria rows; do not change intent mid-group.
+
+## Acceptance Criteria Writing Rules
+
+- Must be clear, testable, atomic, and verifiable.
+- If outcome is binary, respond ONLY with Yes or No (no extra text).
+- Keep business-readable English; avoid vague phrases like "should work correctly".
+
+## Delivery Notes
+
+- CSV has no borders; user can apply borders in Excel using Ctrl+A → Borders.
