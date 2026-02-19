@@ -1,0 +1,216 @@
+---
+description: Cursor AI governance for Project Managers – read-only, decision support, security standards. PMs use Cursor for analysis, review, planning; never for code changes or engineering workflows.
+alwaysApply: true
+---
+
+# Cursor AI Rules for Project Managers with Security Standards
+
+## Objective
+
+Define strict governance and operating rules for using Cursor AI in the Project Management lifecycle, including security standards. Cursor is used for analysis, review, planning, and decision support **without modifying the codebase** or impacting engineering workflows.
+
+---
+
+## Core Philosophy
+
+Cursor is a **decision-support and analysis tool**, not a coding or development tool for Project Managers.
+
+**PMs must focus on:**
+- Clarity
+- Risk visibility
+- Planning accuracy
+- Stakeholder alignment
+- Quality governance
+
+**PMs must NOT:**
+- Change or generate production code
+- Push commits
+- Modify repositories
+- Change system architecture
+- Override technical decisions without consultation
+
+All technical implementation remains the responsibility of Development and QA teams.
+
+---
+
+## Rule 1: Read-Only Interaction
+
+- Cursor must be used in **read-only or review mode**.
+- PMs can analyze, review, and understand code but **must not alter it**.
+
+**Allowed:** Code understanding, architecture review, risk detection, dependency analysis.
+
+**Not Allowed:** Editing files, writing production logic, changing configuration.
+
+---
+
+## Rule 2: Requirement and Scope Validation
+
+PMs must use Cursor to:
+- Validate requirement completeness
+- Identify missing use cases
+- Highlight ambiguity
+- Compare scope versions
+
+All findings must be documented and shared with stakeholders.
+
+---
+
+## Rule 3: Risk and Dependency Governance
+
+Cursor must be used to:
+- Identify technical, functional, and integration risks
+- Detect external dependencies
+- Highlight bottlenecks
+- Suggest mitigation strategies
+
+PMs must maintain a risk log and update it regularly.
+
+---
+
+## Rule 4: Estimation and Timeline Review
+
+Cursor should support:
+- Complexity analysis
+- Effort validation
+- Detection of underestimation
+- Buffer recommendations
+
+Final estimation must be approved by Development leads.
+
+---
+
+## Rule 5: Architecture Awareness (Without Control)
+
+PMs should:
+- Understand high-level architecture
+- Review scalability and maintainability
+- Identify integration risks
+
+PMs must NOT:
+- Enforce architectural changes
+- Directly instruct technical refactoring
+
+All suggestions must go through technical review.
+
+---
+
+## Rule 6: Quality Governance
+
+PMs must use Cursor to:
+- Identify critical user flows
+- Detect potential edge cases
+- Ensure test coverage awareness
+
+PMs should collaborate with QA teams for validation.
+
+---
+
+## Rule 7: Decision Support and Trade-offs
+
+Cursor can be used to:
+- Compare technical or business options
+- Highlight risks and benefits
+- Provide structured decision frameworks
+
+PMs remain accountable for decisions.
+
+---
+
+## Rule 8: Documentation Excellence
+
+Cursor should be used to:
+- Review project documentation
+- Improve clarity
+- Detect gaps
+- Create structured summaries
+
+All final documentation must be reviewed by domain experts.
+
+---
+
+## Rule 9: Stakeholder Communication
+
+Cursor can assist in:
+- Drafting status reports
+- Executive summaries
+- Client updates
+- Simplifying technical language
+
+Final communication must be validated by PMs.
+
+---
+
+## Rule 10: Data Security and Compliance
+
+**Strictly prohibited:**
+- Uploading confidential client data
+- Sharing credentials
+- Sharing proprietary algorithms
+- Using AI tools for sensitive or PII data without masking
+
+**Mandatory Security Standards:**
+1. Encrypt all sensitive data during upload and storage.
+2. Use secure authentication for AI tools.
+3. Maintain access logs for AI interactions.
+4. Ensure no AI outputs contain raw sensitive information.
+5. Periodically audit AI data usage.
+
+Sensitive information must always be masked.
+
+---
+
+## Rule 11: Transparency and Auditability
+
+PMs must:
+- Document AI usage
+- Maintain decision traceability
+- Record AI-assisted recommendations
+
+This ensures governance and accountability.
+
+---
+
+## Rule 12: Collaboration with Teams
+
+PMs must:
+- Share AI insights with Dev, QA, and BA
+- Encourage cross-functional validation
+- Avoid unilateral decisions
+
+---
+
+## Rule 13: Continuous Learning
+
+PMs should:
+- Improve prompt quality
+- Build reusable prompt libraries
+- Share best practices across teams
+
+---
+
+## Best Practices
+
+1. Use Cursor early in the project lifecycle.
+2. Validate outputs with experts.
+3. Avoid overdependence on AI.
+4. Maintain critical thinking.
+5. Focus on outcomes, not tools.
+6. Follow all security standards strictly.
+
+---
+
+## Expected Benefits
+
+- Better project predictability
+- Reduced risks
+- Faster decision-making
+- Improved delivery governance
+- Enhanced stakeholder confidence
+- Stronger security and compliance posture
+
+---
+
+## Outcome
+
+A structured, governed, and secure AI-powered Project Management approach that enhances visibility, clarity, delivery excellence, and security without interfering with engineering workflows.

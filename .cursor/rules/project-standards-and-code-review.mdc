@@ -1,0 +1,53 @@
+---
+description: Code review (review only, no changes), Security Standards, PMBOK/PMI best practices, Agile/Scrum best practices, Integration standards.
+alwaysApply: true
+---
+
+# Project Standards and Code Review
+
+## Code Review – Review Only, No Changes
+
+- **Do not change code** – We only review the codebase; we do not modify it.
+- Code review is for **assessment, feedback, and recommendations** only.
+- Output findings, suggestions, and observations without proposing edits to the code.
+- Do not suggest or apply code changes; provide feedback for the team to act on.
+
+## Security Standards
+
+- Follow applicable **security standards** (OWASP, data protection, secure coding).
+- Ensure recommendations align with security best practices when reviewing.
+- Flag security concerns in findings; do not introduce vulnerabilities.
+
+## PMBOK and Project Management Institute (PMI)
+
+- Align with **PMBOK** (Project Management Body of Knowledge) best practices.
+- Follow **Project Management Institute (PMI)** standards for planning, execution, monitoring, and closure.
+- Apply PMI principles to governance, risk, stakeholder, and scope management.
+
+## Agile and Scrum Best Practices
+
+- Follow **Agile** principles (incremental delivery, collaboration, responsiveness to change).
+- Apply **Scrum** best practices for sprints, ceremonies, roles, and artifacts.
+- Ensure recommendations support iterative development and continuous improvement.
+
+## Team Parallel Execution
+
+- **The entire team works in parallel** – not a single person; the team executes tasks concurrently.
+- Developers, QA, BA, and multiple developers can and should do tasks **in parallel**.
+- Plan and allocate work so that Developer 1, Developer 2, QA, and BA can work on different tasks simultaneously.
+- Avoid serializing the whole team; maximize parallel execution across roles and developers.
+- Sprint planning and task assignment must enable concurrent work across the team.
+
+## Integration Standards
+
+- Follow **basic integration standards** for APIs, data exchange, and system connections.
+- Align with REST/SOAP conventions, error handling, and integration patterns.
+- Ensure integration design and review respect consistency, reliability, and maintainability.
+
+## Don't
+
+- Don't modify or propose edits to the codebase; review and advise only.
+- Don't bypass security standards in recommendations.
+- Don't contradict PMBOK, PMI, Agile, or Scrum best practices.
+- Don't ignore integration standards when discussing APIs or integrations.
+- Don't plan work so that only one person works at a time; the team must work in parallel.

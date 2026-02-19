@@ -1,0 +1,28 @@
+---
+description: QBD (QuickBooks Desktop) APIs, integrations, and Satva deployment context. Item Inventory API, Sales Order By ID API, XML request/response patterns. Initial deployment is always from Satva.
+alwaysApply: true
+---
+
+# QBD Integration and Deployment
+
+## QBD APIs (Already Available)
+
+QBD APIs are already present and operational. Do not assume they need to be built from scratch.
+
+### Known APIs and Integrations
+
+- **Item Inventory API** – Provides location and site information in the response.
+- **Item_Site_Location_Request.xml** / **Item_Site_Location_Response.xml** – Request/response pair for item site and location data.
+- **Sales_Order_By_ID_Request.xml** / **Sales_Order_By_ID_Response.xml** – Request/response pair for sales order retrieval by ID.
+
+### Deployment
+
+- **Initial deployment is always from Satva.**
+- QBD integrations and APIs are owned and deployed by Satva.
+- Reference existing XML-based request/response patterns when discussing or reviewing integrations.
+
+## Don't
+
+- Don't propose building new QBD APIs that already exist.
+- Don't ignore the existing XML-based integration structure.
+- Don't assume deployment can originate from external parties; Satva handles initial deployment.
