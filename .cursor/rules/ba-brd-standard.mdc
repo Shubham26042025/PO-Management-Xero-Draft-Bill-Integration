@@ -56,3 +56,9 @@ BRD must follow this structure exactly:
 BRD must include: scope boundaries, key workflows, integrations, assumptions/constraints, and next actions.
 
 **If transcript is missing/not provided, do not proceed.** Request transcript or key decisions.
+
+## Document Storage Location
+
+All BRD documents **MUST** be saved to: `BA Docs/Business Requirement Document/`
+
+See the BA Document Storage Locations rule for complete folder structure requirements.

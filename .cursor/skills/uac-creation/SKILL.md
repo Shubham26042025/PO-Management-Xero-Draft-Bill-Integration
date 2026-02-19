@@ -50,3 +50,9 @@ No | Module | AS A/AN | I want to | So That | # | Questions | Acceptance Criteri
 ## Delivery Notes
 
 - CSV has no borders; user can apply borders in Excel using Ctrl+A → Borders.
+
+## Document Storage
+
+Save all UAC documents to: `BA Docs/User Stories and Acceptance Criteria/`
+
+Create the folder structure if it doesn't exist. Use descriptive file names (e.g., `UAC_PO_Module_Sprint1.csv`).

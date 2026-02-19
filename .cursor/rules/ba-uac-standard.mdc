@@ -46,3 +46,9 @@ No | Module | AS A/AN | I want to | So That | # | Questions | Acceptance Criteri
 ## Delivery Notes
 
 - CSV has no borders; user can apply borders in Excel using Ctrl+A → Borders.
+
+## Document Storage Location
+
+All UAC documents **MUST** be saved to: `BA Docs/User Stories and Acceptance Criteria/`
+
+See the BA Document Storage Locations rule for complete folder structure requirements.

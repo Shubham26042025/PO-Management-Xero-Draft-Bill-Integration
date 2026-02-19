@@ -58,3 +58,9 @@ Before finalizing, ensure the BRD includes:
 - Next actions
 
 **If transcript is missing, do not proceed.** Request transcript or key decisions.
+
+## Document Storage
+
+Save all BRD documents to: `BA Docs/Business Requirement Document/`
+
+Create the folder structure if it doesn't exist. Use descriptive file names (e.g., `BRD_PO_Management_Sprint1.md`).

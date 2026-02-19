@@ -1,0 +1,96 @@
+---
+description: UAT Testing Standard - Automated testing based on FRD and sprint plan
+alwaysApply: true
+---
+
+# UAT Testing Standard
+
+This rule governs how User Acceptance Testing (UAT) is executed for this project. All UAT must be based on FRD, sprint plan, and UAC documents.
+
+## Mandatory Prerequisites
+
+Before executing UAT:
+
+1. **FRD must be available** in `BA Docs/Functional Requirement Document/`
+2. **Sprint plan** must clearly identify sprint deliverables
+3. **UAC CSV** must be available in `BA Docs/User Stories and Acceptance Criteria/`
+4. **Application must be deployed** to UAT/staging environment
+5. **Credentials must be configured** securely (environment variables, not hardcoded)
+
+## Test Execution Requirements
+
+### Document-Based Testing
+
+- All test scenarios **MUST** be derived from UAC CSV
+- Test coverage **MUST** align with FRD functional requirements
+- Only sprint-scope items **MUST** be tested (exclude out-of-scope)
+
+### Test Coverage Per Module
+
+Each module in sprint scope must include:
+
+- ✅ Positive test scenarios (happy path)
+- ✅ Negative test scenarios (error handling)
+- ✅ Edge cases (boundary conditions)
+- ✅ Role-based tests (permissions, access control)
+- ✅ Validation tests (business rules, constraints)
+- ✅ Integration tests (third-party syncs, data flows)
+
+### Test Execution Order
+
+1. **Prerequisites**: Login, data setup, environment validation
+2. **Core Workflows**: Main user journeys per FRD
+3. **Validations**: Business rules and constraints
+4. **Integrations**: External system interactions
+5. **Cleanup**: Reset state if needed
+
+## Validation Against Acceptance Criteria
+
+- Each UAC row **MUST** have a corresponding test case
+- Test results **MUST** validate against expected outcomes
+- Binary outcomes (Yes/No) **MUST** be verified explicitly
+- Evidence **MUST** be captured (screenshots, API responses, logs)
+
+## Test Reporting
+
+### Mandatory Report Sections
+
+- Test summary (total, passed, failed, blocked, pass rate)
+- Detailed test execution results per module
+- Failed tests with evidence and notes
+- Blocked tests with reasons
+- Recommendations and next steps
+
+### Report Storage
+
+All test reports **MUST** be saved to: `BA Docs/Test Reports/`
+
+Use naming convention: `UAT_Report_Sprint[X]_[Date].md`
+
+## Automation Requirements
+
+- Prefer automated test execution over manual testing
+- Use appropriate tools (browser automation for web, API clients for APIs)
+- Implement retry logic for flaky tests
+- Capture evidence automatically (screenshots, responses)
+
+## Security Requirements
+
+- **Never hardcode credentials** in test scripts
+- Use environment variables or secure credential storage
+- Do not commit credentials to version control
+- Rotate test credentials regularly
+
+## Post-Testing Actions
+
+1. **Document results** in test report
+2. **Flag issues** for development team
+3. **Track fixes** and retest failed cases
+4. **Maintain history** per sprint
+
+## Integration with Development Workflow
+
+- UAT runs **after** development completion
+- Results shared with development team
+- Failed tests tracked until resolution
+- Test history maintained for regression analysis

@@ -1,0 +1,119 @@
+---
+description: Change Request Update Standard - Update existing BRD, FRD, UAC documents in-place with version history
+alwaysApply: true
+---
+
+# Change Request Update Standard
+
+This rule governs how Change Requests are applied to existing BRD, FRD, and UAC documents.
+
+## Core Principle
+
+- **DO NOT create new standalone BRD/FRD/UAC files**
+- **DO NOT rewrite documents from scratch** unless required for consistency
+- **Update existing documents in-place** and append version updates
+
+## Mandatory Update Approach
+
+For EACH existing document (BRD, FRD, UAC):
+
+1. **Add new version entry** in version history section (do not remove old history)
+2. **Add "Change Request" subsection** in relevant section(s)
+3. **Update impacted existing content** in-place so old rules no longer appear
+4. **Keep unaffected sections unchanged**
+5. **Ensure BRD ↔ FRD ↔ UAC are fully consistent**
+
+## Version History Requirements
+
+- Add new version row with:
+  - Version: next incremental version
+  - Date: current date
+  - Author: BA/Product Analyst
+  - Change Summary: Brief description of change
+- **Never remove** existing version history entries
+
+## Change Request Documentation
+
+Each document must include:
+
+- Change Request title/number
+- Date of change request
+- Old rule (what is being removed/changed)
+- New rule (what replaces it)
+- Reason for change (business justification)
+- Impact summary (affected modules/features)
+
+## Consistency Requirements
+
+### BRD Updates Must Include:
+
+- Version history entry
+- Change Request subsection
+- Updated Business Requirements (remove old, add new)
+- Updated Business Rules
+- Updated Scope Impact
+- Updated Success Criteria
+
+### FRD Updates Must Include:
+
+- Version history entry
+- Change Request Summary
+- Updated Business Rules
+- Updated Functional Scope (impacted modules)
+- Updated Functional Flows
+- Updated Screen/UX Requirements
+- Updated Validation Rules
+- Updated Permissions Model
+- Updated Data Model (if applicable)
+- Updated Migration/Backward Compatibility notes
+
+### UAC Updates Must Include:
+
+- Minimum 15 new UAC rows for the change request
+- Strict CSV format: `No | Module | AS A/AN | I want to | So That | # | Questions | Acceptance Criteria`
+- Append to existing UAC (do not replace)
+- Post-UAC section with:
+  - Missing/Unclear Requirements
+  - Assumptions Made
+  - Client Questions to Confirm (grouped by category)
+
+## Edge Cases Coverage
+
+All change requests must cover:
+
+- Positive scenarios
+- Negative scenarios
+- Boundary cases
+- Role-based access control
+- Validation/error handling
+- Migration/backward compatibility
+
+## Document Location
+
+- BRD: `BA Docs/Business Requirement Document/[existing filename]`
+- FRD: `BA Docs/Functional Requirement Document/[existing filename]`
+- UAC: `BA Docs/User Stories and Acceptance Criteria/[existing filename]`
+
+## Quality Checks
+
+Before finalizing updates:
+
+- [ ] Version history updated (added, not replaced)
+- [ ] Old rule removed from all documents
+- [ ] New rule added consistently
+- [ ] Impacted sections updated
+- [ ] Unaffected sections preserved
+- [ ] UAC rows added (minimum 15)
+- [ ] Consistency across BRD/FRD/UAC
+- [ ] No orphaned references to old rule
+- [ ] Client questions documented
+- [ ] Assumptions listed
+
+## Output Style
+
+- Client-friendly, clean business English
+- Use headings and short bullets where helpful
+- Keep functional clarity over technical depth
+- Keep old content where still valid
+- Only update impacted sections
+- Explicitly mention versioned update in existing documents

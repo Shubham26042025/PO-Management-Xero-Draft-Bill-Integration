@@ -1,0 +1,68 @@
+---
+description: BA Document Storage Locations - Mandatory folder structure for BRD, FRD, and UAC documents
+alwaysApply: true
+---
+
+# BA Document Storage Locations
+
+This rule enforces the mandatory folder structure for storing Business Analysis documents in this project.
+
+## Document Storage Structure (Mandatory)
+
+All BA documents **MUST** be stored in the following dedicated folders:
+
+```
+BA Docs/
+├── Business Requirement Document/     (for BRD files)
+├── Functional Requirement Document/    (for FRD files)
+├── User Stories and Acceptance Criteria/  (for UAC files)
+└── Test Reports/                       (for UAT test reports)
+```
+
+## Storage Rules
+
+### Business Requirement Documents (BRD)
+- **Location**: `BA Docs/Business Requirement Document/`
+- **File naming**: Use descriptive names (e.g., `BRD_PO_Management_Sprint1.md` or `BRD_Xero_Integration_v1.0.md`)
+- **Format**: Markdown (.md) or Word (.docx) format
+
+### Functional Requirement Documents (FRD)
+- **Location**: `BA Docs/Functional Requirement Document/`
+- **File naming**: Use descriptive names (e.g., `FRD_PO_Creation_Sprint1.md` or `FRD_Xero_Sync_v1.0.md`)
+- **Format**: Markdown (.md) or Word (.docx) format
+
+### User Stories and Acceptance Criteria (UAC)
+- **Location**: `BA Docs/User Stories and Acceptance Criteria/`
+- **File naming**: Use descriptive names (e.g., `UAC_PO_Module_Sprint1.csv` or `UAC_Xero_Integration.csv`)
+- **Format**: CSV format (as per BA UAC Standard rule)
+
+### Test Reports (UAT)
+- **Location**: `BA Docs/Test Reports/`
+- **File naming**: Use descriptive names (e.g., `UAT_Report_Sprint1_2025-02-19.md` or `UAT_Report_PO_Module.md`)
+- **Format**: Markdown (.md) format
+
+## Enforcement
+
+When creating or saving BRD, FRD, or UAC documents:
+
+1. **Always save to the correct folder** based on document type
+2. **Create the folder structure** if it doesn't exist
+3. **Do not save** these documents in root directory or other locations
+4. **Verify the path** before saving: ensure documents go to `BA Docs/[appropriate subfolder]/`
+
+## Folder Creation
+
+If the `BA Docs` folder or its subfolders do not exist, create them automatically before saving documents.
+
+## Examples
+
+✅ **Correct paths:**
+- `BA Docs/Business Requirement Document/BRD_PO_Management.md`
+- `BA Docs/Functional Requirement Document/FRD_Xero_Integration_Sprint1.md`
+- `BA Docs/User Stories and Acceptance Criteria/UAC_PO_Creation_Module.csv`
+- `BA Docs/Test Reports/UAT_Report_Sprint1_2025-02-19.md`
+
+❌ **Incorrect paths:**
+- `BRD_PO_Management.md` (root directory)
+- `Documents/BRD_PO_Management.md` (wrong folder)
+- `BA Docs/BRD_PO_Management.md` (missing subfolder)

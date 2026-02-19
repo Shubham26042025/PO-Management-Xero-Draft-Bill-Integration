@@ -1,0 +1,101 @@
+---
+description: BA FRD Creation Standard (Sprint-Specific + Enterprise-Grade)
+alwaysApply: true
+---
+
+# BA FRD Creation Standard
+
+This rule governs how Functional Requirements Documents (FRDs) are created for this project. Follow enterprise-grade standards with sprint-specific focus and deep analysis.
+
+## Discovery & Inputs Collection (Mandatory)
+
+Before generating an FRD, collect and confirm:
+
+1. Approved BRD (upload or paste)
+2. Statement of Work (SOW)
+3. Minutes of Meeting (MoM) from discovery or sprint discussions
+4. Mockups, wireframes, or screenshots
+5. Sprint Plan or Sprint Scope document
+6. Sprint number for this FRD
+7. Out-of-scope items or explicitly deferred features for this sprint
+8. Known constraints (budget, timeline, third-party dependency, compliance)
+9. Client expectations not clearly written in the BRD
+
+**Do not generate an FRD until sufficient clarity is achieved.** If any critical input is missing, pause and ask follow-up questions.
+
+## Analysis Expectations (Mandatory)
+
+When documents are provided, you must:
+
+- Interpret **implicit requirements**, not just stated ones
+- Identify **gaps between BRD, sprint scope, and mockups**
+- Detect **unclear flows, missing validations, and undefined edge cases**
+- Flag **non-functional expectations** even if not explicitly mentioned (performance, auditability, security, scalability, usability)
+- Identify **assumptions being made by the client or BA**
+- Note **dependencies on third-party systems, APIs, or data availability**
+
+Clearly list **questions that should be asked to the client** before final sign-off.
+
+## Sprint Mapping Logic
+
+- Parse the sprint plan to identify sprint deliverables
+- Map each deliverable to: BRD requirements, mockups/UI references, business workflows
+- Clearly separate: what is included in this sprint vs what is future scope
+- **Do not mix multiple sprints in a single FRD**
+
+## FRD Generation Rules (Strict)
+
+- Generate the FRD using the **exact structure and order** defined in the provided FRD template
+- Do NOT rename sections, reorder headers, or skip sections
+- Only populate content based on validated inputs
+
+## Writing Style & Tone Rules
+
+- Write in **clear, professional, human English**
+- Assume the reader understands business but not internal logic
+- Avoid robotic phrases like "system shall" unless necessary
+- Explain **intent, usage, and impact**, not just functionality
+- Prefer paragraphs over bullet points
+- Use bullets only when they improve clarity
+
+The document should feel suitable for: Clients, Developers, QA, Project Managers.
+
+## Module-Level Writing Guidance
+
+For each module or feature included in the sprint:
+
+1. Begin with the **purpose of the module**
+2. Explain **how users will interact with it in real scenarios**
+3. Clarify: user roles involved, access boundaries, data ownership
+4. Describe expected system behavior, validations, and outcomes
+5. Highlight assumptions and constraints inline where relevant
+
+If UI screens are provided: align explanations with **actual user behavior**, not just screen elements. Reference mockups or screenshots contextually.
+
+## Mandatory Output Sections
+
+Ensure the FRD includes:
+
+- Project metadata
+- Version history
+- Authorization memorandum
+- Introduction and purpose
+- Business requirements overview
+- Detailed functional requirements with user impact
+- Assumptions and constraints
+
+## Final Validation Step
+
+Before finalizing the FRD:
+
+- Summarize **open questions**
+- List **identified gaps or risks**
+- Clearly state any **assumptions made due to missing information**
+
+Do not silently assume missing details.
+
+## Document Storage Location
+
+All FRD documents **MUST** be saved to: `BA Docs/Functional Requirement Document/`
+
+See the BA Document Storage Locations rule for complete folder structure requirements.
